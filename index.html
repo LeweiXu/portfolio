@@ -53,6 +53,57 @@
         width: 2px;
         @apply bg-slate-200 dark:bg-slate-border;
       }
+
+      @media print {
+        header, footer, aside, .no-print, button {
+          display: none !important;
+        }
+        body {
+          background: white !important;
+          color: black !important;
+          padding: 0 !important;
+        }
+        .mesh-gradient {
+          background: none !important;
+        }
+        main {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+        .lg\:col-span-8 {
+          grid-column: span 12 / span 12 !important;
+        }
+        .max-w-6xl {
+          max-width: 100% !important;
+        }
+        section {
+          page-break-inside: avoid;
+        }
+        /* Restore contrast for print */
+        .text-slate-500, .text-slate-400 {
+          color: #4a5568 !important;
+        }
+        .text-primary {
+          color: #135bec !important;
+          -webkit-print-color-adjust: exact;
+        }
+        .bg-primary {
+          background-color: #135bec !important;
+          -webkit-print-color-adjust: exact;
+        }
+        .bg-slate-50, .bg-slate-100 {
+          background-color: #f7fafc !important;
+          border: 1px solid #edf2f7 !important;
+        }
+        .rounded-3xl, .rounded-[2.5rem] {
+          border-radius: 12px !important;
+        }
+        .border-slate-border, .border-slate-200 {
+          border-color: #e2e8f0 !important;
+        }
+      }
     </style>
     <script type="importmap">
 {

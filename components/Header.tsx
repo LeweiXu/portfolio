@@ -40,10 +40,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, setView }) => {
             onClick={() => setView('resume')}
             className={`text-sm font-semibold transition-colors hover:text-primary ${currentView === 'resume' ? 'text-primary' : 'text-slate-600 dark:text-slate-400'}`}
           >
-            Resume
-          </button>
-          <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all transform hover:shadow-lg hover:shadow-primary/20 active:scale-95">
-            Hire me
+            CV & Contact
           </button>
         </nav>
         

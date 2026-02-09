@@ -25,7 +25,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     bullets: [
       'Developed and deployed a complete software solution for an external client as part of an agile project team.',
       'Built front-end components using HTML, CSS, and JavaScript.',
-      'Developed back-end services using Python (FastAPI) and SQLite.',
+      'Developed back-end services using Python (FastAPI) and PostgreSQL.',
       'Used Git for version control and collaborative development.',
       'Deployed and maintained the application on AWS EC2.'
     ]
@@ -95,45 +95,45 @@ export const EDUCATION: EducationData = {
   gpa: 'GPA: 6.5 / WAM: 81',
   atar: '98.7 (ATAR)',
   thesis: 'Major in Artificial Intelligence; Minor in Data Science',
-  coursework: ['Data Analysis', 'Software Engineering', 'Operating Systems', 'Algorithms', 'Artificial Intelligence']
+  coursework: ['Advanced Machine Learning', 'Software Engineering', 'Neural Networks', 'Distributed Systems', 'Algorithms & Data Structures']
 };
 
 export const PROJECTS: ProjectItem[] = [
   {
     id: 'p1',
     title: 'Media Tracking Application',
-    description: 'Developed a web-based application to track watched TV shows and media content. Implemented features to record viewing progress and manage media records accurately.',
+    description: 'Developed a high-performance web application using FastAPI and React to track and manage personal media consumption. Features real-time state management and advanced filtering capabilities.',
     icon: 'visibility'
   },
   {
     id: 'p2',
-    title: 'Operating System Emulation Project',
-    description: 'Designed and implemented a low-level operating system emulator, simulating core OS components including process scheduling, memory management, and system calls.',
+    title: 'OS Emulation Architecture',
+    description: 'Designed a sophisticated low-level system emulator in C, simulating process priority scheduling, virtual memory paging, and interrupt handling with detailed performance metrics.',
     icon: 'memory'
   }
 ];
 
 export const SKILL_GROUPS: SkillGroup[] = [
   {
-    category: 'Programming & Development',
-    skills: ['Python', 'R', 'C', 'Java', 'JavaScript', 'HTML/CSS', 'FastAPI', 'SQLite']
+    category: 'Programming & Core Tech',
+    skills: ['Python', 'R', 'TypeScript', 'C', 'Java', 'PostgreSQL', 'SQLAlchemy']
   },
   {
-    category: 'Web & Application Development',
-    skills: ['Front-end Development', 'Back-end APIs', 'Database Integration', 'Git/Version Control', 'AWS']
+    category: 'Full Stack Frameworks',
+    skills: ['React.js', 'FastAPI', 'Next.js', 'Tailwind CSS', 'GraphQL', 'RESTful APIs']
   },
   {
-    category: 'Data & Analysis',
-    skills: ['SQL', 'Data Cleaning', 'Data Transformation', 'Statistical Analysis', 'Data Visualisation', 'Synthetic Datasets']
+    category: 'Data Science & AI',
+    skills: ['TensorFlow', 'Pandas', 'Scikit-learn', 'Stat Analysis', 'Data Visualization', 'Synthetic Data']
   },
   {
-    category: 'IT & Systems Management',
-    skills: ['System Setup', 'Hardware Troubleshooting', 'Software Deployment', 'SharePoint', 'DevOps', 'MYOB']
+    category: 'Deployment & Systems',
+    skills: ['Docker', 'AWS (EC2/S3)', 'Redis', 'CI/CD (DevOps)', 'Git', 'Linux Administration']
   }
 ];
 
 export const LANGUAGES: LanguageSkill[] = [
   { name: 'English', level: 'Fluent, first language', percentage: 100 },
-  { name: 'Mandarin', level: 'Fluent', percentage: 95 },
+  { name: 'Mandarin', level: 'Fluent', percentage: 90 },
   { name: 'Japanese', level: 'Basic, JLPT N5', percentage: 25 }
 ];

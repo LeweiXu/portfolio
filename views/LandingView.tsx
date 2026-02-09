@@ -8,13 +8,15 @@ interface LandingViewProps {
 const LandingView: React.FC<LandingViewProps> = ({ setView }) => {
   const techStack = [
     { name: 'Python', icon: 'code_blocks' },
-    { name: 'R', icon: 'analytics' },
+    { name: 'R', icon: 'analytics'},
     { name: 'FastAPI', icon: 'bolt' },
-    { name: 'SQL', icon: 'storage' },
-    { name: 'AWS', icon: 'cloud' },
+    { name: 'PostgreSQL', icon: 'database' },
+    { name: 'SQLAlchemy', icon: 'schema' },
+    { name: 'TypeScript', icon: 'web' },
     { name: 'React.js', icon: 'layers' },
-    { name: 'Typescript', icon: 'web' },
+    { name: 'Tailwind CSS', icon: 'brush' },
     { name: 'Docker', icon: 'coffee' },
+    { name: 'AWS', icon: 'cloud' },
     { name: 'Git', icon: 'hub' }
   ];
 
@@ -30,9 +32,9 @@ const LandingView: React.FC<LandingViewProps> = ({ setView }) => {
       description: 'Expertise in turning raw data into actionable intelligence using R and Python.'
     },
     {
-      icon: 'api',
-      title: 'Backend Engineering',
-      description: 'Building robust, high-performance APIs and microservices with FastAPI.'
+      icon: 'layers',
+      title: 'Full Stack Development',
+      description: 'Building end-to-end applications from responsive user interfaces to scalable, robust server-side architectures.'
     }
   ];
 
@@ -54,7 +56,7 @@ const LandingView: React.FC<LandingViewProps> = ({ setView }) => {
               <span className="text-primary">Data Scientist</span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed">
-              Specialized experience in Python (FastAPI), JavaScript, and Data Science. Leveraging advanced analytics and modern web frameworks to build data-driven applications.
+              Specialized experience in Python (FastAPI), modern TypeScript frameworks, and Data Science. Leveraging advanced analytics and full-stack expertise to build production-grade applications.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
@@ -168,7 +170,7 @@ const LandingView: React.FC<LandingViewProps> = ({ setView }) => {
           <h4 className="text-primary text-sm font-bold uppercase tracking-[0.2em]">Technology Stack</h4>
           <h3 className="text-3xl font-bold">Comprehensive toolkit for development & analytics</h3>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {techStack.map((tech, idx) => (
             <div 
               key={idx} 

@@ -3,6 +3,12 @@ import React from 'react';
 import { SKILL_GROUPS, LANGUAGES } from '../constants';
 
 const Sidebar: React.FC = () => {
+  const handleDownload = () => {
+    // Standard approach for professional web resumes: 
+    // Trigger print dialog where the user can "Save as PDF"
+    window.print();
+  };
+
   return (
     <section className="p-8 rounded-3xl bg-white dark:bg-slate-card border border-slate-200 dark:border-slate-border shadow-xl">
       <h4 className="text-xl font-black mb-10 flex items-center gap-3">
@@ -45,9 +51,13 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
       
-      <div className="mt-12 pt-10 border-t border-slate-100 dark:border-slate-800 text-center">
+      <div className="mt-12 pt-10 border-t border-slate-100 dark:border-slate-800 text-center no-print">
         <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">Interested in collaboration?</p>
-        <button className="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 py-3.5 rounded-xl font-black text-sm shadow-xl shadow-black/10 transition-all hover:scale-[1.02] active:scale-95">
+        <button 
+          onClick={handleDownload}
+          className="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 py-3.5 rounded-xl font-black text-sm shadow-xl shadow-black/10 transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 group"
+        >
+          <span className="material-symbols-outlined text-sm group-hover:animate-bounce">download</span>
           Download Resume PDF
         </button>
       </div>
