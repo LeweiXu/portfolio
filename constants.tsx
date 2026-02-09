@@ -41,6 +41,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Contributed to data-driven projects, including the development of synthetic datasets for public use.',
       'Applied machine learning techniques to analyse and model hospital wait times.',
       'Conducted data analysis using Python and R.',
+      'Heavy use of data science libraries including Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn and Plotly.',
       'Used Microsoft DevOps and Git to support version control and project workflows.'
     ]
   },
