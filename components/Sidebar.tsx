@@ -4,8 +4,12 @@ import { SKILL_GROUPS, LANGUAGES } from '../constants';
 
 const Sidebar: React.FC = () => {
   const handleDownload = () => {
-    // Reverted to standard print functionality
-    window.print();
+    const link = document.createElement('a');
+    link.href = '/RESUME%20LEWEI%20XU.pdf';
+    link.download = 'RESUME LEWEI XU.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -50,8 +54,7 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
       
-      <div className="mt-12 pt-10 border-t border-slate-100 dark:border-slate-800 text-center">
-        <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">Interested in collaboration?</p>
+      <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800 text-center">
         <button 
           onClick={handleDownload}
           className="w-full bg-slate-900 dark:bg-white text-white dark:text-slate-900 py-3.5 rounded-xl font-black text-sm shadow-xl shadow-black/10 transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2 group"
