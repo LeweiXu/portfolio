@@ -5,7 +5,7 @@ const Summary: React.FC = () => {
   return (
     <section>
       <div className="flex items-center gap-4 mb-8">
-        <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="size-10 rounded-full bg-primary/10 flex items-center justify-center no-print">
           <span className="material-symbols-outlined text-primary">person</span>
         </div>
         <h3 className="text-3xl font-black tracking-tight">Summary</h3>

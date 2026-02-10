@@ -4,13 +4,12 @@ import { SKILL_GROUPS, LANGUAGES } from '../constants';
 
 const Sidebar: React.FC = () => {
   const handleDownload = () => {
-    // Standard approach for professional web resumes: 
-    // Trigger print dialog where the user can "Save as PDF"
+    // Reverted to standard print functionality
     window.print();
   };
 
   return (
-    <section className="p-8 rounded-3xl bg-white dark:bg-slate-card border border-slate-200 dark:border-slate-border shadow-xl">
+    <section className="p-8 rounded-3xl bg-white dark:bg-slate-card border border-slate-200 dark:border-slate-border shadow-xl no-print">
       <h4 className="text-xl font-black mb-10 flex items-center gap-3">
         <span className="material-symbols-outlined text-primary">terminal</span>
         Technical Skills
@@ -51,7 +50,7 @@ const Sidebar: React.FC = () => {
         </div>
       </div>
       
-      <div className="mt-12 pt-10 border-t border-slate-100 dark:border-slate-800 text-center no-print">
+      <div className="mt-12 pt-10 border-t border-slate-100 dark:border-slate-800 text-center">
         <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-4">Interested in collaboration?</p>
         <button 
           onClick={handleDownload}
