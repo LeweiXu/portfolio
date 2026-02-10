@@ -110,12 +110,6 @@ export const PROJECTS: ProjectItem[] = [
     title: 'OS Emulation Architecture',
     description: 'Designed and implemented a low-level operating system emulator in C, simulating process priority scheduling, virtual memory paging, and interrupt handling.',
     icon: 'memory'
-  },
-  {
-    id: 'p3',
-    title: 'Synthetic Health Data Generator',
-    description: 'Engineered a pipeline to generate privacy-preserving synthetic datasets for medical research using differential privacy techniques and deep generative models.',
-    icon: 'science'
   }
 ];
 

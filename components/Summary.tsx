@@ -10,7 +10,7 @@ const Summary: React.FC = () => {
         </div>
         <h3 className="text-3xl font-black tracking-tight">Summary</h3>
       </div>
-      <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+      <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-base">
         Reliable professional with hands-on experience across data management, IT systems, software development, administrative support, and customer-facing roles. Highly organised and detail-oriented, with a proven ability to quickly learn new systems, processes, and technologies. Comfortable working independently or as part of a team, and skilled at managing competing priorities while maintaining accuracy and efficiency. Currently undertaking research at the University of Western Australia.
       </p>
     </section>
