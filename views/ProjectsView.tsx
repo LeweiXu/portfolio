@@ -128,7 +128,6 @@ const ProjectsView: React.FC = () => {
               {project.isInProgress && (
                 <div className="absolute top-4 right-4 z-10">
                   <span className="px-3 py-1 bg-amber-500 text-white text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg flex items-center gap-1">
-                    <span className="material-symbols-outlined text-xs animate-spin">progress_activity</span>
                     In Progress
                   </span>
                 </div>
