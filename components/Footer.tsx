@@ -26,9 +26,6 @@ const Footer: React.FC = () => {
           <a href="https://linkedin.com/in/leweixu" target="_blank" rel="noopener" className="text-slate-400 hover:text-primary transition-all hover:scale-110">
             <span className="material-symbols-outlined text-2xl">link</span>
           </a>
-          <a href="#" className="text-slate-400 hover:text-primary transition-all hover:scale-110">
-            <span className="material-symbols-outlined text-2xl">hub</span>
-          </a>
         </div>
       </div>
     </footer>
