@@ -116,6 +116,14 @@ body {
   line-height: 1.8;
 }
 
+.home-section {
+  margin-top: 3rem;
+}
+
+.skill-group--top-border {
+  border-top: 1px solid var(--border);
+}
+
 /* CONTACT */
 .contact-block {
   display: flex;
@@ -195,6 +203,10 @@ body {
   border: 1px solid var(--border);
   padding: 0.25rem 0.6rem;
   letter-spacing: 0.04em;
+}
+
+.skill-group:last-child {
+  border-bottom: none;
 }
 
 /* EXPERIENCE PAGE */
@@ -311,6 +323,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+
+.project-link {
+  color: var(--text-bright);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  color: var(--accent);
 }
 
 .stack-tag {

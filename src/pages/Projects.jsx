@@ -1,28 +1,67 @@
 export default function Projects() {
   const projects = [
     {
-      name: "Portfolio Website",
+      name: "Honours Project",
+      year: "2026",
+      desc: "Explores how RAG and Agentic Planning can enhance MLLM performance on multi-page visually rich documents, including tables, figures, and mixed-modality content.",
+      stack: ["RAG", "VRDU", "Agentic Planning", "MLLMs"],
+      link: "#",
+    },
+    {
+      name: "G8 Research Output Database",
       year: "2025",
-      desc: "This portfolio — a minimalist single-page React app with no external UI libraries. Dark theme, monospace accents, clean layout.",
-      stack: ["React", "CSS"],
+      desc: "A web application developed for UWA Business School to track and visualise research outputs across individual researchers and universities, with tooling to support academic promotion decisions.",
+      stack: ["React", "Tailwind CSS", "TypeScript", "FastAPI", "AWS EC2"],
+      link: "#",
     },
     {
-      name: "Document VQA Pipeline",
+      name: "CITS3403 Media Tracker",
       year: "2024",
-      desc: "A research pipeline for visually rich document understanding, combining RAG with multimodal LLMs to answer questions over complex document layouts.",
-      stack: ["Python", "RAG", "MLLMs", "FastAPI"],
+      desc: "A full-stack web application for tracking personal media consumption habits and history, built as part of a university software engineering unit.",
+      stack: ["JavaScript", "HTML", "FastAPI", "SQLite"],
+      link: "https://github.com/LeweiXu/CITS3403-Project",
     },
     {
-      name: "Knowledge Graph Explorer",
+      name: "CITS5508 Machine Learning Labs",
+      year: "2026",
+      desc: "A collection of machine learning lab worksheets completed as part of CITS5508, covering core techniques in supervised learning, learning models, and model evaluation.",
+      stack: ["Scikit-Learn", "NumPy", "Pandas", "TensorFlow"],
+      link: "https://github.com/LeweiXu/CITS5508",
+    },
+    {
+      name: "CITS4404 Stock Market Trading Bots",
+      year: "2025",
+      desc: "Designed and compared algorithmic stock market trading bots, each optimised using nature-inspired optimisation algorithms. Includes performance analysis and visualisation across multiple strategies.",
+      stack: ["Optimisation Algorithms", "Matplotlib", "NumPy", "Pandas"],
+      link: "https://github.com/LeweiXu/CITS4404-Project",
+    },
+    {
+      name: "CITS3011 Diplomacy Bot",
+      year: "2025",
+      desc: "Designed and implemented an autonomous agent to play Diplomacy: a highly complex, non-deterministic strategy game requiring negotiation and long-term planning.",
+      stack: ["Planning Algorithms", "Intelligent Agents"],
+      link: "https://github.com/LeweiXu/CITS3011-Project-2025",
+    },
+    {
+      name: "CITS3002 Battleship Game",
+      year: "2025",
+      desc: "A client-server Battleship game run over the command line, demonstrating network architecture, security vulnerability identification, and live patching under multi-threaded and multi-process conditions.",
+      stack: ["Networks", "Security", "Threading", "Multi-processing"],
+      link: "https://github.com/LeweiXu/CITS3002-project-2025",
+    },
+    {
+      name: "CITS3001 Advanced Algorithms Labs",
       year: "2024",
-      desc: "Tool for constructing and querying knowledge graphs extracted from unstructured documents, supporting AI-assisted document Q&A.",
-      stack: ["Python", "Knowledge Graphs", "PostgreSQL"],
+      desc: "Lab worksheets from CITS3001 demonstrating applied understanding of data structures: graphs, trees, and more, alongside algorithms including dynamic programming and graph traversal.",
+      stack: ["Algorithms", "Data Structures"],
+      link: "https://github.com/LeweiXu/CITS3001",
     },
     {
-      name: "ML Data Pipeline",
+      name: "CITS2002 Operating System Simulator",
       year: "2023",
-      desc: "End-to-end machine learning pipeline with synthetic data generation, feature engineering, model training and evaluation using scikit-learn and TensorFlow.",
-      stack: ["Python", "TensorFlow", "Scikit-learn", "Pandas"],
+      desc: "A low-level simulation of operating system behaviour in C, modelling the full lifecycle from system startup through process scheduling, clocks, and resource management.",
+      stack: ["Operating Systems", "C"],
+      link: "https://github.com/LeweiXu/CITS2002Project-1",
     },
   ];
 
@@ -30,13 +69,20 @@ export default function Projects() {
     <div>
       <h2 className="page-title">projects</h2>
       <p style={{ fontSize: "0.85rem", color: "var(--text-dim)", marginBottom: "2.5rem" }}>
-        a selection of things i've built and researched.
+        a selection of projects completed either on a personal basis or as part of university coursework.
       </p>
       <div className="projects-grid">
         {projects.map((p, i) => (
           <div className="project-item" key={i}>
             <div className="project-header">
-              <span className="project-name">{p.name}</span>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                className="project-name project-link"
+              >
+                {p.name}
+              </a>
               <span className="project-year">{p.year}</span>
             </div>
             <p className="project-desc">{p.desc}</p>

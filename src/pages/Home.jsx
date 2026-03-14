@@ -1,30 +1,29 @@
 export default function Home() {
   const skillGroups = [
     {
-      title: "full stack",
+      title: "full stack development",
       tags: ["TypeScript", "React", "Tailwind CSS", "FastAPI", "PostgreSQL", "AWS EC2", "Docker", "Git"],
     },
     {
-      title: "data science",
+      title: "data science & machine learning",
       tags: ["Python", "R", "Scikit-learn", "TensorFlow", "Pandas", "NumPy", "Matplotlib", "Machine Learning", "Deep Learning", "Synthetic Data"],
     },
     {
       title: "AI research",
       tags: ["RAG", "Knowledge Graphs", "VRDU", "MLLMs", "Agentic Planning", "Multi-Hop Reasoning"],
     },
+    {
+      title: "Languages",
+      tags: ["English - First Language", "Chinese - Fluent/Native", "Japanese - Basic Comprehension"],
+    }
   ];
 
   return (
     <div className="home">
       <div className="home-header">
-        {/* <p className="home-greeting">hello, i'm</p> */}
         <h1 className="home-name">Lewei Xu</h1>
-        <p className="home-tagline">
-          Full stack developer, data scientist, and AI researcher.
-        </p>
-        <p className="home-tagline">
-          Based in Perth, Australia.
-        </p>
+        <p className="home-tagline">Full stack developer, data scientist, and AI researcher.</p>
+        <p className="home-tagline">Based in Perth, Australia.</p>
       </div>
 
       <div className="contact-block">
@@ -42,7 +41,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className="home-section">
         <p className="section-label">skills</p>
         <div className="skills-grid">
           {skillGroups.map((group) => (
@@ -55,6 +54,18 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="home-section">
+        <p className="section-label">education</p>
+        <div className="skills-grid">
+          <div className="skill-group skill-group--top-border">
+            <p className="skill-group-title">University of Western Australia</p>
+            <p className="edu-degree">Bachelor of Advanced Computer Science (Honours)</p>
+            <p className="edu-sub">Major in Artificial Intelligence | Minor in Data Science</p>
+            <p className="edu-date">2023 — present</p>
+          </div>
         </div>
       </div>
     </div>
