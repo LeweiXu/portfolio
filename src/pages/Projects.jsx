@@ -5,7 +5,7 @@ export default function Projects() {
       year: "2026",
       desc: "Explores how RAG and Agentic Planning can enhance MLLM performance on multi-page visually rich documents, including tables, figures, and mixed-modality content.",
       stack: ["RAG", "VRDU", "Agentic Planning", "MLLMs"],
-      link: "#",
+      link: "https://www.overleaf.com/read/ntdnhjhxkgqt#386d92",
     },
     {
       name: "G8 Research Output Database",
