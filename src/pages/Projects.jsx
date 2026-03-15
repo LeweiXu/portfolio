@@ -12,7 +12,7 @@ export default function Projects() {
       year: "2025",
       desc: "A web application developed for UWA Business School to track and visualise research outputs across individual researchers and universities, with tooling to support academic promotion decisions.",
       stack: ["React", "Tailwind CSS", "TypeScript", "FastAPI", "AWS EC2"],
-      link: "#",
+      link: "https://g8-research-output-database.vercel.app/",
     },
     {
       name: "CITS3403 Media Tracker",
