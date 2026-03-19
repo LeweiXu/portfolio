@@ -91,7 +91,7 @@ export default function Home() {
             <li>Gym - shoulders are fine but somehow have a right tricep injury</li>
             <li>Anime - manga, light novels, you name it, let's not dwell too much on this one</li>
             <li>Snooker - probably messing up my back over time but whatever</li>
-            <li>Eating - almost hit 90kg at one point as an Asian of average height</li>
+            <li>Eating - it's in this list cause I almost hit 90kg in weight at one point</li>
           </ul>
         </div>
       </div>
