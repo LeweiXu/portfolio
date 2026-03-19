@@ -55,6 +55,7 @@ export default function Experience() {
   return (
     <div>
       <h2 className="page-title">experience</h2>
+      <p class="page-intro">a selection of work experience across research, industry, and retail roles.</p>
       <div className="timeline">
         {items.map((item, i) => (
           <div className="timeline-item" key={i}>

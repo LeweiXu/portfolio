@@ -24,6 +24,7 @@ export default function Home() {
         <h1 className="home-name">Lewei Xu</h1>
         <p className="home-tagline">Full stack developer, data scientist, and AI researcher.</p>
         <p className="home-tagline">Based in Perth, Australia.</p>
+        <p className="home-quote">"AI is a tool that should make you more capable, not a substitute that makes you less so."</p>
       </div>
 
       <div className="contact-block">
@@ -61,11 +62,37 @@ export default function Home() {
         <p className="section-label">education</p>
         <div className="skills-grid">
           <div className="skill-group skill-group--top-border">
-            <p className="skill-group-title">University of Western Australia</p>
-            <p className="edu-degree">Bachelor of Advanced Computer Science (Honours)</p>
-            <p className="edu-sub">Major in Artificial Intelligence | Minor in Data Science</p>
-            <p className="edu-date">2023 — present</p>
+            <p className="skill-group-title">Honours in Artificial Intelligence</p>
+            <p className="edu-sub">University of Western Australia</p>
+            <a
+              href="https://www.overleaf.com/read/ntdnhjhxkgqt#386d92"
+              target="_blank"
+              rel="noreferrer"
+              className="edu-link"
+            >
+              Project Proposal ↗
+            </a>
+            <p className="edu-date">2026</p>
           </div>
+          <div className="skill-group">
+            <p className="skill-group-title">Bachelor of Advanced Computer Science</p>
+            <p className="edu-sub">University of Western Australia</p>
+            <p className="edu-sub">Major in Artificial Intelligence | Minor in Data Science</p>
+            <p className="edu-sub">High Distinction</p>
+            <p className="edu-date">2023 - 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="home-section">
+        <p className="section-label">interests</p>
+        <div className="skill-group skill-group--top-border">
+          <ul className="interests-list">
+            <li>Gym - shoulders are fine but somehow have a right tricep injury</li>
+            <li>Anime - manga, light novels, you name it, let's not dwell too much on this one</li>
+            <li>Snooker - probably messing up my back over time but whatever</li>
+            <li>Eating - almost hit 90kg at one point as an Asian of average height</li>
+          </ul>
         </div>
       </div>
     </div>

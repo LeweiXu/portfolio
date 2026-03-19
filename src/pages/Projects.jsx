@@ -68,9 +68,7 @@ export default function Projects() {
   return (
     <div>
       <h2 className="page-title">projects</h2>
-      <p style={{ fontSize: "0.85rem", color: "var(--text-dim)", marginBottom: "2.5rem" }}>
-        a selection of projects completed either on a personal basis or as part of university coursework.
-      </p>
+      <p  class="page-intro">a selection of projects completed either on a personal basis or as part of university coursework.</p>
       <div className="projects-grid">
         {projects.map((p, i) => (
           <div className="project-item" key={i}>
