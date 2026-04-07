@@ -386,6 +386,52 @@ body {
   color: var(--accent);
 }
 
+.project-extra-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-extra-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.project-extra-link:hover { color: var(--text-bright); }
+
+.project-demo {
+  border-left: 2px solid var(--border);
+  padding-left: 0.75rem;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-demo-note {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.project-demo-credentials {
+  display: flex;
+  gap: 1.25rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text);
+}
+
+.demo-label {
+  color: var(--text-dim);
+  margin-right: 0.35rem;
+}
+
 .stack-tag {
   font-family: 'DM Mono', monospace;
   font-size: 0.68rem;

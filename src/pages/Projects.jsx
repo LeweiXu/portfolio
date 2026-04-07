@@ -4,15 +4,26 @@ export default function Projects() {
       name: "Honours Project",
       year: "2026",
       desc: "Explores how RAG and Agentic Planning can enhance MLLM performance on multi-page visually rich documents, including tables, figures, and mixed-modality content.",
-      stack: ["RAG", "VRDU", "Agentic Planning", "MLLMs"],
-      link: "https://www.overleaf.com/read/ntdnhjhxkgqt#386d92",
+      stack: ["RAG", "VRDU", "Agentic Planning", "MLLMs", "Multi-hop Reasoning"],
+      link: "https://github.com/LeweiXu/Multi-Page-VRDU",
+      extraLinks: [{ label: "Project Proposal ↗", href: "https://www.overleaf.com/read/ntdnhjhxkgqt#386d92" }],
+    },
+    {
+      name: "LOG - Media Library",
+      year: "2026",
+      desc: "A web application for tracking and visualising media consumption habits, built mainly for personal use but with potential for public release. Features include automatic media metadata retrieval and comprehensive statistics and visualisations of consumption habits.",
+      stack: ["React", "FastAPI", "PostgreSQL", "Docker"],
+      link: "https://github.com/LeweiXu/MediaTrack2.0",
+      extraLinks: [{ label: "Live Site ↗", href: "https://log-media-tracker.vercel.app" }],
+      demo: { username: "demo_user", password: "password1" },
     },
     {
       name: "G8 Research Output Database",
       year: "2025",
       desc: "A web application developed for UWA Business School to track and visualise research outputs across individual researchers and universities, with tooling to support academic promotion decisions.",
       stack: ["React", "Tailwind CSS", "TypeScript", "FastAPI", "AWS EC2"],
-      link: "https://g8-research-output-database.vercel.app/",
+      link: "https://github.com/LeweiXu/G8-Research-Output-Database",
+      extraLinks: [{ label: "Live Site ↗", href: "https://g8-research-output-database.vercel.app/" }],
     },
     {
       name: "CITS3403 Media Tracker",
@@ -84,6 +95,24 @@ export default function Projects() {
               <span className="project-year">{p.year}</span>
             </div>
             <p className="project-desc">{p.desc}</p>
+            {p.extraLinks && (
+              <div className="project-extra-links">
+                {p.extraLinks.map((el) => (
+                  <a key={el.href} href={el.href} target="_blank" rel="noreferrer" className="project-extra-link">
+                    {el.label}
+                  </a>
+                ))}
+              </div>
+            )}
+            {p.demo && (
+              <div className="project-demo">
+                <p className="project-demo-note">a demo account is available — data is refreshed from my personal account every 24 hours, so any changes you make won't persist.</p>
+                <div className="project-demo-credentials">
+                  <span><span className="demo-label">username</span> {p.demo.username}</span>
+                  <span><span className="demo-label">password</span> {p.demo.password}</span>
+                </div>
+              </div>
+            )}
             <div className="project-stack">
               {p.stack.map((s) => (
                 <span className="stack-tag" key={s}>{s}</span>

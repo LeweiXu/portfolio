@@ -64,14 +64,6 @@ export default function Home() {
           <div className="skill-group skill-group--top-border">
             <p className="skill-group-title">Honours in Artificial Intelligence</p>
             <p className="edu-sub">University of Western Australia</p>
-            <a
-              href="https://www.overleaf.com/read/ntdnhjhxkgqt#386d92"
-              target="_blank"
-              rel="noreferrer"
-              className="edu-link"
-            >
-              Project Proposal ↗
-            </a>
             <p className="edu-date">2026</p>
           </div>
           <div className="skill-group">
