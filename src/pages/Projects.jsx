@@ -9,12 +9,12 @@ export default function Projects() {
       extraLinks: [{ label: "Project Proposal ↗", href: "https://www.overleaf.com/read/ntdnhjhxkgqt#386d92" }],
     },
     {
-      name: "LOG - Media Library",
+      name: "Logarium",
       year: "2026",
       desc: "A web application for tracking and visualising media consumption habits, built mainly for personal use but with potential for public release. Features include automatic media metadata retrieval and comprehensive statistics and visualisations of consumption habits.",
       stack: ["React", "FastAPI", "PostgreSQL", "Docker"],
-      link: "https://github.com/LeweiXu/LOG-Media-Library",
-      extraLinks: [{ label: "Live Site ↗", href: "https://log-media-tracker.vercel.app" }],
+      link: "https://github.com/LeweiXu/logarium",
+      extraLinks: [{ label: "Live Site ↗", href: "https://logarium.vercel.app" }],
       demo: { username: "demo_user", password: "password1" },
     },
     {
