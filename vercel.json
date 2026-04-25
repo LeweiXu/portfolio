@@ -1,4 +1,29 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "leweidigitalportfolio.digital"
+        }
+      ],
+      "destination": "https://leweixu.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.leweidigitalportfolio.digital"
+        }
+      ],
+      "destination": "https://leweixu.com/",
+      "statusCode": 301
+    }
+  ]
 }
