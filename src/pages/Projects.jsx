@@ -6,7 +6,14 @@ export default function Projects() {
       desc: "Explores how RAG and Agentic Planning can enhance MLLM performance on multi-page visually rich documents, including tables, figures, and mixed-modality content.",
       stack: ["RAG", "VRDU", "Agentic Planning", "MLLMs", "Multi-hop Reasoning"],
       link: "https://github.com/LeweiXu/Multi-Page-VRDU",
-      extraLinks: [{ label: "Project Proposal ↗", href: "https://www.overleaf.com/read/ntdnhjhxkgqt#386d92" }],
+      extraLinks: [{ label: "Literature Review ↗", href: "https://www.overleaf.com/read/yrbdrydtbsqc#40c3c4" }, { label: "MP-VRDU Survey ↗", href: "https://www.researchgate.net/publication/405777996_Managing_Evidence_at_Document_Scale_A_Survey_of_Multi-Page_Visually_Rich_Document_Understanding" }],
+    },
+    {
+      name: "Semantic Novel Recommender",
+      year: "2026",
+      desc: "A local, offline semantic search and recommendation engine for Chinese web novels using BAAI/bge-m3 embeddings: exact cosine retrieval with a tag-overlap re-ranking boost, metadata filters, and an optional local-LLM query parser. Ships with a FastAPI/React reading web application.",
+      stack: ["BAAI/bge-m3", "Semantic Search", "PyTorch", "Sentence-Transformers"],
+      link: "https://github.com/LeweiXu/semantic-webnovel-recommender",
     },
     {
       name: "Logarium",
