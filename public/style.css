@@ -1,0 +1,124 @@
+:root {
+  --bg: #1a1a1a;
+  --border: #333333;
+  --text: #c8c8c8;
+  --text-dim: #8e8e8e;
+  --text-bright: #f2f2f2;
+  --accent: #c8b89a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 2.5rem 1.5rem 5rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--text-bright); }
+
+nav {
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav a {
+  margin-right: 1.5rem;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] { color: var(--text-bright); }
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+h2 {
+  margin: 2.75rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+p { margin: 0 0 1rem; }
+
+ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+li { margin-bottom: 0.2rem; }
+
+.location { margin-bottom: 1.5rem; color: var(--text-dim); }
+
+.quote {
+  margin: 1.5rem 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.meta {
+  margin: 0 0 0.6rem;
+  font-size: 0.875rem;
+  color: var(--text-dim);
+}
+
+.entry { margin-bottom: 2rem; }
+
+.tech {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-dim);
+}
+
+dl.contact { margin: 0; }
+
+dl.contact dt {
+  float: left;
+  clear: left;
+  width: 5.5rem;
+  color: var(--text-dim);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+dl.contact dd { margin: 0 0 0.15rem 5.5rem; }
+
+ol.publications { margin: 0; padding-left: 1.25rem; }
+ol.publications li { margin-bottom: 1rem; }
+ol.publications .authors { color: var(--text-dim); font-size: 0.9rem; }
+ol.publications .venue { font-size: 0.9rem; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 34rem) {
+  body { padding: 2rem 1.1rem 3.5rem; }
+  h1 { font-size: 1.65rem; }
+  dl.contact dt { float: none; width: auto; }
+  dl.contact dd { margin-left: 0; margin-bottom: 0.75rem; }
+}

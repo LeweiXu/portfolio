@@ -2,43 +2,185 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <title>Lewei Xu | AI Researcher, Data Scientist, Software Developer</title>
     <meta
       name="description"
-      content="Lewei Xu's portfolio: full stack development, data science, machine learning, and AI research projects in Perth, Australia."
+      content="Lewei Xu is an honours student at the University of Western Australia researching multi-page visually rich document understanding, with two publications in 2026 including one accepted at EMNLP Main Conference. Based in Perth, Australia, with a background in NLP, deep learning, data science, and full stack development."
     />
     <link rel="canonical" href="https://leweixu.com/" />
+    <link rel="stylesheet" href="style.css" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="Lewei Xu" />
     <meta
       property="og:description"
-      content="Full stack developer, data scientist, and AI researcher based in Perth, Australia."
+      content="Honours student at UWA researching multi-page visually rich document understanding. NLP, deep learning, data science, and full stack development. Based in Perth, Australia."
     />
     <meta property="og:url" content="https://leweixu.com/" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Lewei Xu" />
     <meta
       name="twitter:description"
-      content="Full stack developer, data scientist, and AI researcher based in Perth, Australia."
+      content="Honours student at UWA researching multi-page visually rich document understanding. NLP, deep learning, data science, and full stack development. Based in Perth, Australia."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+    </nav>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Lewei Xu | Full Stack Developer, Data Scientist, AI Researcher</title>
+    <main>
+      <h1>Lewei Xu</h1>
+      <p class="location">Based in Perth, Australia.</p>
+
+      <p>
+        I am an honours student at the University of Western Australia researching long
+        document understanding, at the intersection of NLP and vision. I have two
+        publications in 2026, one of them accepted at EMNLP Main Conference. I specialise
+        in NLP and deep learning, but I am also well versed in traditional machine
+        learning for structured data and predictive modelling. I have a strong data
+        science background as well, working with data analysis, statistical modelling,
+        and visualisation. Systems and software development is another interest, now
+        shifted more toward design and engineering as LLMs change what building software
+        involves.
+      </p>
+
+      <p class="quote">
+        "AI is a tool that should make you more capable, not a substitute that makes you
+        less so."
+      </p>
+
+      <h2>Contact</h2>
+      <dl class="contact">
+        <dt>Email</dt>
+        <dd><a href="mailto:leweixu@gmail.com">leweixu@gmail.com</a></dd>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/LeweiXu">github.com/LeweiXu</a></dd>
+        <dt>LinkedIn</dt>
+        <dd><a href="https://www.linkedin.com/in/lewei-xu/">linkedin.com/in/lewei-xu</a></dd>
+      </dl>
+
+      <h2>Research</h2>
+      <p>
+        My topic is multi-page visually rich document understanding (MP-VRDU). Visually
+        rich documents such as scientific papers, financial reports, and technical manuals
+        are everywhere in real work, and they often run to dozens or hundreds of pages.
+        Automating the understanding of them saves time, cuts down manual review, and lets
+        organisations make faster decisions over large volumes of documents.
+      </p>
+      <p>
+        MP-VRDU is the task of extracting or inferring information from those long
+        documents given their content, structure, and layout. In practice it is realised
+        as document question answering, since summarisation, key information extraction,
+        and structured output can all be framed as QA tasks.
+      </p>
+
+      <h2>Publications</h2>
+      <ol class="publications">
+        <li>
+          <a href="https://www.researchgate.net/publication/405777996_Managing_Evidence_at_Document_Scale_A_Survey_of_Multi-Page_Visually_Rich_Document_Understanding">Managing
+          Evidence at Document Scale: A Survey of Multi-Page Visually Rich Document
+          Understanding</a>.
+          <span class="authors">Lewei Xu, Yihao Ding, Zihan Xu, Siwen Luo, Daochang Liu, Wei Liu.</span>
+          <span class="venue">Accepted at EMNLP Main Conference, 2026.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2608.07943">Locating Failure in Multi-Page
+          Visually Rich Document Understanding: An Empirical Attribution</a>.
+          <span class="authors">Lewei Xu, Yihao Ding, Zihan Xu, Daniel Yitian Su, Daochang Liu, Siwen Luo, Yifan Peng, Wei Liu.</span>
+          <span class="venue">Submitted to EACL, under review.</span>
+        </li>
+      </ol>
+
+      <h2>Skills</h2>
+      <div class="entry">
+        <h3>Full stack development</h3>
+        <p class="tech">
+          JavaScript, TypeScript, React, Tailwind CSS, HTML, CSS, Python, FastAPI,
+          PostgreSQL, SQLite, Docker, Git, GitHub, AWS EC2
+        </p>
+      </div>
+      <div class="entry">
+        <h3>Data science and machine learning</h3>
+        <p class="tech">
+          Python, R, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn, statistical
+          modelling, synthetic data
+        </p>
+      </div>
+      <div class="entry">
+        <h3>Deep learning</h3>
+        <p class="tech">
+          TensorFlow, Keras, PyTorch, HuggingFace Transformers, CNNs, RNNs and LSTMs,
+          Transformers, model training and fine-tuning, GPU-accelerated computing
+        </p>
+      </div>
+      <div class="entry">
+        <h3>Document understanding</h3>
+        <p class="tech">
+          Multimodal LLMs, retrieval-augmented generation, agentic and adaptive-trajectory
+          pipelines, evidence attribution and error analysis, multi-hop reasoning,
+          document layout and OCR-based parsing
+        </p>
+      </div>
+      <div class="entry">
+        <h3>Research</h3>
+        <p class="tech">
+          Literature review and survey methodology, experimental design, empirical
+          evaluation and error analysis, academic writing, peer review
+        </p>
+      </div>
+      <div class="entry">
+        <h3>Tools and platforms</h3>
+        <p class="tech">
+          Microsoft DevOps, SharePoint, MYOB, Microsoft Office (Word, Excel, PowerPoint,
+          Outlook)
+        </p>
+      </div>
+      <div class="entry">
+        <h3>Languages</h3>
+        <p class="tech">
+          English (fluent, first language), Mandarin (fluent), Japanese (basic, JLPT N5)
+        </p>
+      </div>
+
+      <h2>Education</h2>
+      <div class="entry">
+        <h3>Bachelor of Advanced Computer Science (Honours)</h3>
+        <p class="meta">University of Western Australia, Nedlands, WA &middot; Jan 2023 &ndash; Nov 2026</p>
+        <ul>
+          <li>Major in Artificial Intelligence, minor in Data Science</li>
+          <li>Cumulative GPA 6.56, WAM 81</li>
+          <li>
+            Relevant coursework: data structures, algorithms, agile web development,
+            machine learning, deep learning
+          </li>
+        </ul>
+      </div>
+      <div class="entry">
+        <h3>Western Australian Certificate of Education</h3>
+        <p class="meta">Duncraig Senior High School, Duncraig, WA &middot; Jan 2017 &ndash; Nov 2022</p>
+        <ul>
+          <li>ATAR 98.7</li>
+          <li>
+            Mathematics Methods and Specialist, Physics, Chemistry, Computer Science,
+            English
+          </li>
+        </ul>
+      </div>
+
+      <h2>Interests</h2>
+      <ul>
+        <li>Gym, shoulders are fine but somehow have a right tricep injury</li>
+        <li>Anime, manga, light novels, you name it, let's not dwell too much on this one</li>
+        <li>Snooker, probably messing up my back over time but whatever</li>
+        <li>Eating, it's in this list cause I weighed in at 89kg at one point</li>
+      </ul>
+    </main>
+
+    <footer>&copy; Lewei Xu 2026 &middot; built with plain HTML and CSS</footer>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -49,40 +191,53 @@
           "name": "Lewei Xu",
           "url": "https://leweixu.com/",
           "email": "mailto:leweixu@gmail.com",
-          "jobTitle": [
-            "Full Stack Developer",
-            "Data Scientist",
-            "AI Researcher"
-          ],
+          "jobTitle": ["AI Researcher", "Data Scientist", "Software Developer"],
+          "description": "Honours student at the University of Western Australia researching multi-page visually rich document understanding, at the intersection of NLP and vision.",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Perth",
+            "addressRegion": "WA",
             "addressCountry": "AU"
           },
           "alumniOf": {
             "@type": "CollegeOrUniversity",
             "name": "University of Western Australia"
           },
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Western Australia"
+          },
+          "knowsAbout": [
+            "Multi-Page Visually Rich Document Understanding",
+            "Natural Language Processing",
+            "Retrieval-Augmented Generation",
+            "Multimodal Large Language Models",
+            "Deep Learning",
+            "Data Science",
+            "Full Stack Development"
+          ],
           "sameAs": [
             "https://github.com/LeweiXu",
             "https://www.linkedin.com/in/lewei-xu/"
+          ],
+          "subjectOf": [
+            {
+              "@type": "ScholarlyArticle",
+              "name": "Managing Evidence at Document Scale: A Survey of Multi-Page Visually Rich Document Understanding",
+              "author": "Lewei Xu, Yihao Ding, Zihan Xu, Siwen Luo, Daochang Liu, Wei Liu",
+              "datePublished": "2026",
+              "url": "https://www.researchgate.net/publication/405777996_Managing_Evidence_at_Document_Scale_A_Survey_of_Multi-Page_Visually_Rich_Document_Understanding"
+            },
+            {
+              "@type": "ScholarlyArticle",
+              "name": "Locating Failure in Multi-Page Visually Rich Document Understanding: An Empirical Attribution",
+              "author": "Lewei Xu, Yihao Ding, Zihan Xu, Daniel Yitian Su, Daochang Liu, Siwen Luo, Yifan Peng, Wei Liu",
+              "datePublished": "2026",
+              "url": "https://arxiv.org/abs/2608.07943"
+            }
           ]
         }
       }
     </script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

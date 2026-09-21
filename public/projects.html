@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Lewei Xu</title>
+    <meta
+      name="description"
+      content="Projects by Lewei Xu, including honours research on multi-page visually rich document understanding, a semantic web novel recommender, the Logarium media tracker, and university coursework in machine learning, algorithms, and systems."
+    />
+    <link rel="canonical" href="https://leweixu.com/projects.html" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects | Lewei Xu" />
+    <meta
+      property="og:description"
+      content="Projects by Lewei Xu, including honours research on multi-page visually rich document understanding, a semantic web novel recommender, and the Logarium media tracker."
+    />
+    <meta property="og:url" content="https://leweixu.com/projects.html" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+    </nav>
+
+    <main>
+      <h1>Projects</h1>
+      <p class="location">
+        A selection of projects completed either on a personal basis or as part of
+        university coursework.
+      </p>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/Multi-Page-VRDU">Honours Project</a></h3>
+        <p class="meta">2026</p>
+        <p>
+          A training-free agentic RAG framework for multi-page visually rich document
+          understanding. The work explores how retrieval and agentic planning can improve
+          multimodal LLM performance on long documents containing tables, figures, and
+          mixed-modality content. So far it has produced a survey of the field, accepted at
+          EMNLP Main Conference, and an empirical attribution study locating where these
+          systems fail, currently under review at EACL. The framework itself is in
+          progress.
+        </p>
+        <p>
+          <a href="https://www.researchgate.net/publication/405777996_Managing_Evidence_at_Document_Scale_A_Survey_of_Multi-Page_Visually_Rich_Document_Understanding">MP-VRDU survey (EMNLP 2026)</a>
+          &middot;
+          <a href="https://arxiv.org/abs/2608.07943">Empirical attribution paper (under review)</a>
+          &middot;
+          <a href="https://www.overleaf.com/read/yrbdrydtbsqc#40c3c4">Literature review</a>
+        </p>
+        <p class="tech">
+          RAG &middot; VRDU &middot; Agentic planning &middot; Multimodal LLMs &middot; Multi-hop reasoning
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/semantic-webnovel-recommender">Semantic Novel Recommender</a></h3>
+        <p class="meta">2026</p>
+        <p>
+          A local, offline semantic search engine for Chinese web novels that embeds
+          metadata into 1024-dimensional vectors with BAAI/bge-m3 for exact cosine
+          retrieval. Ranking is hybrid: dense retrieval, a tag-overlap boost, and metadata
+          filters, with an optional local LLM for query parsing and re-ranking. The
+          incremental indexing pipeline scales to over 100,000 novels, and it ships with a
+          FastAPI and React reader app.
+        </p>
+        <p><a href="https://novel-reader-rec.vercel.app/">Live site</a></p>
+        <p class="tech">
+          BAAI/bge-m3 &middot; Semantic search &middot; PyTorch &middot; Sentence-Transformers &middot; FastAPI &middot; React
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/logarium">Logarium</a></h3>
+        <p class="meta">2024, rebuilt 2026</p>
+        <p>
+          A full-stack media tracker that unifies ten media types into one library with
+          consistent statuses, ratings, and cross-format statistics. It searches metadata
+          across 15 external providers concurrently, with normalisation, deduplication,
+          and graceful fallback when a provider fails. The backend is a service-oriented
+          FastAPI and PostgreSQL application with JWT multi-user auth and a personalised
+          recommendation engine.
+        </p>
+        <p>
+          <a href="https://logarium.vercel.app/demo">Live demo</a>, which logs you into a
+          demo account mirroring my personal one. Data is refreshed every 24 hours, so any
+          changes you make will not persist.
+        </p>
+        <p class="tech">React &middot; FastAPI &middot; PostgreSQL &middot; Docker</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/G8-Research-Output-Database">G8 Research Output Database</a></h3>
+        <p class="meta">2025</p>
+        <p>
+          A web application developed for UWA Business School to track and visualise
+          research outputs across individual researchers and universities, with tooling to
+          support academic promotion decisions.
+        </p>
+        <p><a href="https://g8-research-output-database.vercel.app/">Live site</a></p>
+        <p class="tech">React &middot; Tailwind CSS &middot; TypeScript &middot; FastAPI &middot; AWS EC2</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS5508">CITS5508 Machine Learning Labs</a></h3>
+        <p class="meta">2026</p>
+        <p>
+          A collection of machine learning lab worksheets completed as part of CITS5508,
+          covering core techniques in supervised learning, learning models, and model
+          evaluation.
+        </p>
+        <p class="tech">Scikit-learn &middot; NumPy &middot; Pandas &middot; TensorFlow</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS4404-Project">CITS4404 Stock Market Trading Bots</a></h3>
+        <p class="meta">2025</p>
+        <p>
+          Designed and compared algorithmic stock market trading bots, each optimised using
+          nature-inspired optimisation algorithms. Includes performance analysis and
+          visualisation across multiple strategies.
+        </p>
+        <p class="tech">Optimisation algorithms &middot; Matplotlib &middot; NumPy &middot; Pandas</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS3011-Project-2025">CITS3011 Diplomacy Bot</a></h3>
+        <p class="meta">2025</p>
+        <p>
+          Designed and implemented an autonomous agent to play Diplomacy, a highly complex,
+          non-deterministic strategy game requiring negotiation and long-term planning.
+        </p>
+        <p class="tech">Planning algorithms &middot; Intelligent agents</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS3002-project-2025">CITS3002 Battleship Game</a></h3>
+        <p class="meta">2025</p>
+        <p>
+          A client-server Battleship game run over the command line, demonstrating network
+          architecture, security vulnerability identification, and live patching under
+          multi-threaded and multi-process conditions.
+        </p>
+        <p class="tech">Networks &middot; Security &middot; Threading &middot; Multi-processing</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS3403-Project">CITS3403 Media Tracker</a></h3>
+        <p class="meta">2024</p>
+        <p>
+          A full-stack web application for tracking personal media consumption habits and
+          history, built as part of a university software engineering unit.
+        </p>
+        <p class="tech">JavaScript &middot; HTML &middot; FastAPI &middot; SQLite</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS3001">CITS3001 Advanced Algorithms Labs</a></h3>
+        <p class="meta">2024</p>
+        <p>
+          Lab worksheets from CITS3001 demonstrating applied understanding of data
+          structures, including graphs and trees, alongside algorithms such as dynamic
+          programming and graph traversal.
+        </p>
+        <p class="tech">Algorithms &middot; Data structures</p>
+      </div>
+
+      <div class="entry">
+        <h3><a href="https://github.com/LeweiXu/CITS2002Project-1">CITS2002 Operating System Simulator</a></h3>
+        <p class="meta">2023</p>
+        <p>
+          A low-level simulation of operating system behaviour in C, modelling the full
+          lifecycle from system startup through process scheduling, clocks, and resource
+          management.
+        </p>
+        <p class="tech">Operating systems &middot; C</p>
+      </div>
+    </main>
+
+    <footer>&copy; Lewei Xu 2026 &middot; built with plain HTML and CSS</footer>
+  </body>
+</html>
