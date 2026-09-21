@@ -2,29 +2,5 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": null,
-  "outputDirectory": "public",
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "leweidigitalportfolio.digital"
-        }
-      ],
-      "destination": "https://leweixu.com/",
-      "statusCode": 301
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.leweidigitalportfolio.digital"
-        }
-      ],
-      "destination": "https://leweixu.com/",
-      "statusCode": 301
-    }
-  ]
+  "outputDirectory": "public"
 }
