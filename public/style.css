@@ -112,6 +112,11 @@ li { margin-bottom: 0.2rem; }
 
 .entry { margin-bottom: 2rem; }
 
+.projects .entry + .entry {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
 .tech {
   margin: 0;
   font-size: 0.875rem;
