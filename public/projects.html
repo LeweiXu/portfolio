@@ -10,6 +10,7 @@
     />
     <link rel="canonical" href="https://leweixu.com/projects.html" />
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Projects | Lewei Xu" />
     <meta
@@ -20,9 +21,12 @@
   </head>
   <body>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html" aria-current="page">Projects</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+      </div>
+      <button type="button" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark theme">Dark</button>
     </nav>
 
     <main>
@@ -48,8 +52,6 @@
           <a href="https://www.researchgate.net/publication/405777996_Managing_Evidence_at_Document_Scale_A_Survey_of_Multi-Page_Visually_Rich_Document_Understanding">MP-VRDU survey (EMNLP 2026)</a>
           &middot;
           <a href="https://arxiv.org/abs/2608.07943">Empirical attribution paper (under review)</a>
-          &middot;
-          <a href="https://www.overleaf.com/read/yrbdrydtbsqc#40c3c4">Literature review</a>
         </p>
         <p class="tech">
           RAG &middot; VRDU &middot; Agentic planning &middot; Multimodal LLMs &middot; Multi-hop reasoning
