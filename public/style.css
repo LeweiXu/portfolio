@@ -112,7 +112,7 @@ li { margin-bottom: 0.2rem; }
 
 .entry { margin-bottom: 2rem; }
 
-.projects .entry + .entry {
+.entry-list .entry + .entry {
   padding-top: 2rem;
   border-top: 1px solid var(--border);
 }
