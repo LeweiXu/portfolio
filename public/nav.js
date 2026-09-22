@@ -35,12 +35,44 @@
       });
   }
 
+  // Cloudflare's email obfuscation rewrites the mailto link in every HTML response, and
+  // its decoder script runs once, on first page load. Content fetched and swapped in
+  // afterwards still carries the encoded placeholder, so decode it ourselves. The address
+  // still never appears in the served HTML; it is assembled in the browser, exactly as
+  // Cloudflare's own script does it, so this keeps the spam protection intact.
+  function decodeCfEmail(hex) {
+    var key = parseInt(hex.substr(0, 2), 16);
+    var out = "";
+    for (var i = 2; i + 1 < hex.length; i += 2) {
+      out += String.fromCharCode(parseInt(hex.substr(i, 2), 16) ^ key);
+    }
+    return out;
+  }
+
+  function revealEmails(root) {
+    try {
+      Array.prototype.forEach.call(root.querySelectorAll(".__cf_email__"), function (span) {
+        var hex = span.getAttribute("data-cfemail");
+        if (!hex) return;
+        var address = decodeCfEmail(hex);
+        if (!address) return;
+        var link = span.closest("a");
+        span.replaceWith(document.createTextNode(address));
+        if (link && (link.getAttribute("href") || "").indexOf("/cdn-cgi/l/email-protection") === 0) {
+          link.setAttribute("href", "mailto:" + address);
+        }
+      });
+    } catch (e) {}
+  }
+
   function swap(doc, page) {
     var current = document.querySelector("main");
     var next = doc.querySelector("main");
     if (!current || !next) return false;
 
-    current.replaceWith(document.importNode(next, true));
+    var incoming = document.importNode(next, true);
+    current.replaceWith(incoming);
+    revealEmails(incoming);
     document.title = doc.title;
 
     HEAD_TAGS.forEach(function (selector) {
