@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 
 AGENTS.md
+CLAUDE.md
 build/
 
 about_me/

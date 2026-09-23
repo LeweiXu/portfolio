@@ -2,7 +2,7 @@
 // just swaps <main> in place so a click does not repaint the whole document. Without JS
 // the links work as ordinary links, which is also what crawlers follow.
 (function () {
-  var PAGES = ["index.html", "experience.html", "projects.html"];
+  var PAGES = ["index.html", "projects.html"];
   var HEAD_TAGS = [
     "meta[name='description']",
     "link[rel='canonical']",
@@ -95,10 +95,10 @@
     load(page).then(function (doc) {
       if (!swap(doc, page)) throw new Error("no main");
       if (push) history.pushState({ page: page }, "", page === "index.html" ? "./" : page);
-      window.scrollTo(0, 0);
       var main = document.querySelector("main");
       main.setAttribute("tabindex", "-1");
-      main.focus();
+      main.focus({ preventScroll: true });
+      window.scrollTo(0, 0);
     }).catch(function () {
       location.href = page;
     });
